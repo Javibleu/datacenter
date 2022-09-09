@@ -10,9 +10,6 @@ export class MetricComponent implements OnInit {
   private _value: number = 0;
   private _max: number = 100;
 
-  @Input() title: string = '';
-  @Input() description: string = '';
-
   @Input('used')
   set value(value: number) {
     if (isNaN(value)) value = 0;

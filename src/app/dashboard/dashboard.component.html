@@ -3,11 +3,13 @@
         <div class="card-header">Overall Metrics</div>
         <div class="card-body">
             <div class="row">
-                <app-metric class="col-sm-6" [used]="cpu.used" [available]="cpu.available" [title]="'CPU'"
-                    [description]="'utilization of CPU cores'">
+                <app-metric class="col-sm-6" [used]="cpu.used" [available]="cpu.available">
+                    <metric-title>CPU</metric-title>
+                    <metric-description>Utilization of CPU cores</metric-description>
                 </app-metric>
-                <app-metric class="col-sm-6" [used]="mem.used" [available]="mem.available" [title]="'Memory'"
-                    [description]="'utilization of memory in GB'">
+                <app-metric class="col-sm-6" [used]="mem.used" [available]="mem.available">
+                    <metric-title>CPU</metric-title>
+                    <metric-description>Utilization of memeory in GB</metric-description>
                 </app-metric>
             </div>
         </div>
