@@ -1,9 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: '[app-nodes-row]',
   templateUrl: './nodes-row.component.html',
-  styleUrls: ['./nodes-row.component.scss']
+  styleUrls: ['./nodes-row.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NodesRowComponent implements OnInit {
   @Input() node: any;
